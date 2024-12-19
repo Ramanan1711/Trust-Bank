@@ -1,0 +1,27 @@
+2024-12-18T17:16:51.803+05:30 ERROR 23692 --- [TrustBank] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.org.springframework.web' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.org.springframework.web
+    Value: "DEBUG # Enable debugging for web-related logs"
+    Origin: class path resource [application.properties] - 46:39
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG # Enable debugging for web-related logs)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
